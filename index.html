@@ -1,0 +1,356 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AgroIndustrial Trading</title>
+    <!-- Bootstrap -->
+    <link href="/css/style.css" rel="stylesheet">
+    <style media="screen">
+
+        @font-face {
+            font-family: Althea;
+            src: url(fonts/Althea-Regular.ttf);
+        }
+        @font-face {
+            font-family: Blacksword;
+            src: url(fonts/Blacksword.otf);
+        }
+        body{
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background: url(img/welcomeback.png) 50% 0 fixed no-repeat;
+            background-size: cover;
+        }
+        .firstContainer{
+            width: 100%;
+            height: 100%;
+
+        }
+        .WelcomeFlag{
+            width: 350px;
+            height: 550px;
+            margin: 0 auto;
+            background: -webkit-linear-gradient(bottom, rgba(255,255,255,0.7) , rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(bottom, rgba(255,255,255,0.7) , rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(bottom, rgba(255,255,255,0.7) , rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to bottom, rgba(255,255,255,0.7) , rgba(255,255,255,0));
+            font-family: Blacksword, sans-serif;
+        }
+        .WelcomeFlag img{
+            position: relative;
+            top: 40px;
+            margin: 0 auto;
+            display: block;
+        }
+        .welcomeTitle{
+            text-shadow: -2px 0px 3px black;
+            text-align: center;
+            font-size: 70px;
+            position: relative;
+            font-weight: normal;
+            font-style: italic;
+            color: white;
+        }
+        header{
+            height: 55px;
+            width: 100%;
+            background-color: rgba(88, 49, 26, 0.17);
+            top: 0px;
+        }
+        .menu{
+            width: fit-content;
+            height: 55px;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        .menu ul{
+            list-style: none;
+            padding: 0;
+            margin: 0px;
+        }
+        .menu li{
+            float: left;
+            padding: 18.5px 50px;
+        }
+        .secondContainer{
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            transform: translate3d(0, 0, 0);
+        }
+        .banner1{
+            width: max-content;
+            height: 180px;
+            overflow: hidden;
+            transform: translate3d(0, 0, 0);
+            position: absolute;
+        }
+        .bannerImg1{
+            float: left;
+            height: 180px;
+            width: 350px;
+        }
+        .bannerImg1 p{
+                margin: 80px auto;
+        }
+
+
+        .banner1 {
+            animation: moveSlideshow 12s linear infinite;
+        }
+
+        @keyframes moveSlideshow {
+            100% {
+                transform: translateX(-31.6666%);
+            }
+        }
+        .thirdContainer{
+            position: relative;
+            top: 20px;
+            width: 100%;
+            font-family: Althea, sans-serif;
+            height: 650px;
+            background-image: url(img/mano.png);
+            background-repeat: no-repeat;
+            background-position-x: -85px;
+            background-position-y: 160px;
+
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        .fourthContainer{
+            position: relative;
+            top: 50px;
+            width: 100%;
+            font-family: Althea, sans-serif;
+            height: 650px;
+            background-image: url(img/barco.png);
+            background-repeat: no-repeat;
+            background-position-x: 300px;
+            background-size: cover;
+
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        .fiveContainer{
+            position: relative;
+            top: 50px;
+            width: 100%;
+            font-family: Althea, sans-serif;
+            height: 650px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        .subContainer{
+            width: 954px;
+            padding: 20px;
+            margin: 0 auto;
+            font-size: 20px;
+            font-family: Althea, sans-serif;
+        }
+        .subContainer ul{
+            line-height: 33px;
+            width: 400px;
+            margin: 0;
+        }
+        .title{
+            font-size: 60px;
+            margin: 0px;
+            font-family: Blacksword;
+            color: rgb(95, 76, 78);
+            text-align: center;
+            z-index: 4;
+            display: block;
+        }
+        .title h2{
+            margin: 0px;
+        }
+        .line{
+            height: 5px;
+            background-color: rgb(105, 199, 227);
+            position: relative;
+            top: -30px;
+            z-index: 2;
+            width: 890px;
+            float: right;
+        }
+        .formContact input{
+            width: 100%;
+            font-size: 22px;
+            font-family: Althea;
+            margin: 10px;
+            background-color: rgba(255,255,255,0.5);
+            color: rgb(95, 76, 78);
+            border: 1px solid rgb(95, 76, 78);
+            padding: 5px;
+        }
+
+        .formContact textarea{
+            width: 100%;
+            font-size: 22px;
+            font-family: Althea;
+            margin: 10px;
+            background-color: rgba(255,255,255,0.5);
+            color: rgb(95, 76, 78);
+            border: 1px solid rgb(95, 76, 78);
+            padding: 5px;
+        }
+        #text1{
+            margin-left: 300px;
+        }
+        #text2{
+            margin-left:420px;
+        }
+        #text3{
+            margin-left:450px;
+        }
+        #text4{
+            margin-left:300px;
+        }
+        #text5{
+            margin-left:280px;
+        }
+
+    </style>
+  </head>
+
+  <body>
+      <div class="firstContainer Welcome" >
+          <div class="WelcomeFlag" style="display:none;">
+              <img class="welcomeImg" src="img/logotipo.png" alt="" width="350px" height="auto" style="display:none;">
+              <img class="welcomeImg" src="img/textoLogo.png" alt="" width="300px" height="auto" style="display:none;">
+              <h3 class="welcomeTitle" style="display:none;">Welcome</h3>
+          </div>
+      </div>
+      <header class="header" style="z-index: 10000;">
+          <div class="menu">
+              <ul>
+                  <li class="menuItem" id="about">About Us</li>
+                  <li class="menuItem" id="market">Markets</li>
+                  <li style="padding: 0 50px; height: 55px;" class="menuItem" id="index"><img class="logoMenu" src="img/logotipo.png" alt="" width="auto" height="55px" style="display:none;"></li>
+                  <li class="menuItem" id="product" >Products</li>
+                  <li class="menuItem" id="contact">Contact Us</li>
+              </ul>
+          </div>
+      </header>
+      <div class="secondContainer">
+          <div class="banner1">
+              <div class="bannerImg1">
+                  <img src="img/banner/banner1.png" alt="" width="100%" height="100%" >
+              </div>
+              <div class="bannerImg1">
+                  <img src="img/banner/banner2.jpg" alt="" width="100%" height="100%" >
+              </div>
+              <div class="bannerImg1">
+                  <img src="img/banner/banner3.jpg" alt="" width="100%" height="100%" >
+              </div>
+              <div class="bannerImg1">
+                  <img src="img/banner/banner4.jpg" alt="" width="100%" height="100%" >
+              </div>
+              <div class="bannerImg1">
+                  <img src="img/banner/banner5.jpg" alt="" width="100%" height="100%" >
+              </div>
+              <div class="bannerImg1">
+                  <img src="img/banner/banner6.jpg" alt="" width="100%" height="100%" >
+              </div>
+              <div class="bannerImg1">
+                  <img src="img/banner/banner7.jpg" alt="" width="100%" height="100%" >
+              </div>
+          </div>
+      </div>
+      <div class="thirdContainer">
+          <div class="subContainer">
+              <div class="Title">
+                  <h2>About Us</h2>
+                  <div class="line"></div>
+              </div>
+              <p id="text1">AgroIndustrial Trading Company is dedicated to the production and export of top quality Peruvian agricultural products for the North American, European and Asian markets.</p>
+              <p id="text2">We specialize in agricultural products in a variety of presentations depending on the product’s destination and costumers’ appeals.</p>
+              <p id="text3">We credit the company’s success to our staff and colleague’s commitment to providing the quality and freshness our customers deserve; as well as their compliance to our company’s policies of quality and personalized/custom service. Another factor to take into account is the close operations with local farms which guarantee us quantities and small prices. We possess the detailed local knowledge which is vital for any serious and efficient agricultural business.</p>
+              <p id="text4">Above all, what sets us apart from any other agricultural manufacturer and trading company, is the personalized and fully guaranteed service we can provide each of our clients. Anyone who works with AgroIndustrial Trading Company can rest assured that they will receive a quality product within any required specification.</p>
+              <p id="text5">In our constant pursuit of innovation and superior customer satisfaction, we are now developing a series of Value-Added products for restaurants and the retail industry.</p>
+          </div>
+      </div>
+      <div class="fourthContainer">
+          <div class="subContainer">
+            <div class="Title">
+               <h2>Objectives</h2>
+               <div class="line"></div>
+           </div>
+          <ul>
+              <li>Our company has the main objective of exporting the freshest products of the agricultural industry from the Peruvian country throughout the world.</li>
+              <li>Offer the most sincere and professional service to our customers for their comfort and mainly guarantee in a 100% the responsibility and legitimate transactions.</li>
+              <li>Guaranteed, specialized and personalized services to our customers.</li>
+              <li>Aim to be the major exporter of agricultural products worldwide.</li>
+              <li>Export from Peru and other Latin American countries such as Venezuela, Argentina, Colombia, and others to the rest of the continents. We have major exports to Europe and Asia.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="fiveContainer">
+          <div class="subContainer">
+              <div class="Title">
+                  <h2>Contact Us</h2>
+                  <div class="line"></div>
+              </div>
+              <div class="formContact">
+                  <form class="contact" name="contact" method="post">
+                      <div class="inputDiv">
+                          <input type="text" name="email" placeholder="Email">
+                      </div>
+                      <div class="inputDiv">
+                          <input type="text" name="name" placeholder="Name">
+                      </div>
+                      <div class="inputDiv">
+                          <input type="text" name="phone" placeholder="Phone Number">
+                      </div>
+                      <div class="AreaDiv">
+                          <textarea name="message" rows="8" cols="80" placeholder="Message"></textarea>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div class="content">
+      </div>
+      <footer>
+          <div class="copyright">
+
+          </div>
+          <div class="">
+
+          </div>
+      </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" integrity="sha256-ihAoc6M/JPfrIiIeayPE9xjin4UWjsx2mjW/rtmxLM4=" crossorigin="anonymous"></script>
+    <script src="/js/scripts.js"></script>
+    <script type="text/javascript">
+        $('.scrollTop').click(function(){
+            alert($(window).scrollTop() + " px");
+        })
+        function focusTarget(selection, target){
+            $(selection).click(function(){
+                $(target).scroll();
+            })
+        }
+        $(document).ready(function(){
+            $('.WelcomeFlag').slideDown(800);
+            $('.welcomeImg').delay(850).fadeIn(600);
+            $('.welcomeTitle').delay(1450).fadeIn(600);
+
+            var altura = $('.header').offset().top;
+
+    	    $(window).on('scroll', function(){
+    		    if ( $(window).scrollTop() > altura ){
+    		       $('.header').css('position', 'fixed');
+                   $('.logoMenu').fadeIn(400);
+    		    } else {
+    			   $('.header').css('position', 'relative');
+                   $('.logoMenu').fadeOut(400);
+    		    }
+    	   });
+           focusTarget('#about', '.secondContainer');
+        });
+    </script>
+  </body>
+</html>

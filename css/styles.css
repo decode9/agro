@@ -1,0 +1,317 @@
+        @font-face {
+            font-family: Althea;
+            src: url(../fonts/Althea-Regular.ttf);
+        }
+        @font-face {
+            font-family: Blacksword;
+            src: url(../fonts/Blacksword.otf);
+        }
+        body{
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background: url(../img/welcomeback.png) 50% 0 fixed no-repeat;
+            background-size: cover;
+        }
+        .firstContainer{
+            width: 100%;
+            height: 100%;
+
+        }
+        .WelcomeFlag{
+            width: 350px;
+            height: 550px;
+            margin: 0 auto;
+            background: -webkit-linear-gradient(bottom, rgba(255,255,255,0.7) , rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(bottom, rgba(255,255,255,0.7) , rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(bottom, rgba(255,255,255,0.7) , rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to bottom, rgba(255,255,255,0.7) , rgba(255,255,255,0));
+            font-family: Blacksword, sans-serif;
+        }
+        .WelcomeFlag img{
+            position: relative;
+            top: 40px;
+            margin: 0 auto;
+            display: block;
+        }
+        .welcomeTitle{
+            text-shadow: -2px 0px 3px black;
+            text-align: center;
+            font-size: 70px;
+            position: relative;
+            font-weight: normal;
+            font-style: italic;
+            color: white;
+        }
+        header{
+            height: 55px;
+            width: 100%;
+            background-color: rgba(88, 49, 26, 0.17);
+            top: 0px;
+        }
+        .menu{
+            width: fit-content;
+            height: 55px;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        .menu ul{
+            list-style: none;
+            padding: 0;
+            margin: 0px;
+        }
+        .menu li{
+            float: left;
+            padding: 18.5px 50px;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+        .menu li:hover{
+            background: rgba(255,255,255,0.3);
+            color: rgb(94, 76, 77);
+            transition: all 0.5s;
+        }
+        .secondContainer{
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            transform: translate3d(0, 0, 0);
+        }
+        .banner1{
+            width: max-content;
+            height: 180px;
+            overflow: hidden;
+            transform: translate3d(0, 0, 0);
+            position: absolute;
+        }
+        .bannerImg1{
+            float: left;
+            height: 180px;
+            width: 350px;
+        }
+        .bannerImg1 p{
+                margin: 80px auto;
+        }
+
+
+        .banner1 {
+            animation: moveSlideshow 12s linear infinite;
+        }
+
+        @keyframes moveSlideshow {
+            100% {
+                transform: translateX(-31.6666%);
+            }
+        }
+        .thirdContainer{
+            position: relative;
+            top: 20px;
+            width: 100%;
+            font-family: Althea, sans-serif;
+            height: 650px;
+            background-image: url(../img/mano.png);
+            background-repeat: no-repeat;
+            background-position-x: -85px;
+            background-position-y: 160px;
+
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        .fourthContainer{
+            position: relative;
+            top: 50px;
+            width: 100%;
+            font-family: Althea, sans-serif;
+            height: 650px;
+            background-image: url(../img/barco.png);
+            background-repeat: no-repeat;
+            background-position-x: 300px;
+            background-size: cover;
+
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        .fiveContainer{
+            position: relative;
+            top: 90px;
+            width: 100%;
+            font-family: Althea, sans-serif;
+            height: 650px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        .sixContainer{
+            position: relative;
+            top: 70px;
+            width: 100%;
+            font-family: Althea, sans-serif;
+            height: 950px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        .subContainer{
+            width: 954px;
+            padding: 20px;
+            margin: 0 auto;
+            font-size: 20px;
+            font-family: Althea, sans-serif;
+        }
+        .subContainer ul{
+            line-height: 33px;
+            width: 400px;
+            margin: 0;
+        }
+        .title{
+            font-size: 60px;
+            margin: 0px;
+            font-family: Blacksword;
+            color: rgb(95, 76, 78);
+            text-align: center;
+            z-index: 4;
+            display: block;
+        }
+        .title h2{
+            margin: 0px;
+        }
+        .line{
+            height: 5px;
+            background-color: rgb(105, 199, 227);
+            position: relative;
+            top: -30px;
+            z-index: 2;
+            width: 890px;
+            float: right;
+        }
+        .formContact input{
+            width: 100%;
+            font-size: 22px;
+            font-family: Althea;
+            margin: 10px;
+            background-color: rgba(255,255,255,0.5);
+            color: rgb(95, 76, 78);
+            border: 1px solid rgb(95, 76, 78);
+            padding: 5px;
+        }
+
+        .formContact textarea{
+            width: 100%;
+            font-size: 22px;
+            font-family: Althea;
+            margin: 10px;
+            background-color: rgba(255,255,255,0.5);
+            color: rgb(95, 76, 78);
+            border: 1px solid rgb(95, 76, 78);
+            padding: 5px;
+        }
+        #text1{
+            margin-left: 300px;
+        }
+        #text2{
+            margin-left:420px;
+        }
+        #text3{
+            margin-left:450px;
+        }
+        #text4{
+            margin-left:300px;
+        }
+        #text5{
+            margin-left:280px;
+        }
+        .icons{
+            position: absolute;
+            height: 100px;
+            transition: all 0.5s;
+            z-index: 3
+        }
+        .icons:hover{
+            width: 210.52px;
+            height: 200px;
+            transition: all 0.5s;
+        }
+        .icons img{
+            transition: all 0.5s;
+            z-index: 2;
+        }
+        #spain{
+            top: 290px;
+            margin-left: 340px;
+            transition: all 0.5s;
+        }
+        #spain:hover{
+            top: 210px;
+            margin-left: 265px;
+            transition: all 0.5s;
+        }
+        #usa{
+            top: 280px;
+            margin-left: 150px;
+            transition: all 0.5s;
+        }
+        #usa:hover{
+            top: 200px;
+            margin-left: 100px;
+            transition: all 0.5s;
+        }
+        #china{
+            top: 300px;
+            margin-left: 630px;
+            transition: all 0.5s;
+        }
+        #france{
+            top: 265px;
+            margin-left: 400px;
+            transition: all 0.5s;
+        }
+        #france:hover{
+            top: 175px;
+            margin-left: 360px;
+            transition: all 0.5s;
+        }
+        #china:hover{
+            top: 210px;
+            margin-left: 570px;
+            transition: all 0.5s;
+        }
+        .exportList{
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+            float: left;
+            top: -190px;
+            left: 150px;
+            z-index: 4;
+            background-color: rgba(255,255,255,0.5);
+        }
+        .exportList ul{
+            width: 360px;
+            height: fit-content;
+        }
+        .exportList li{
+            float: left;
+            margin: 3px 20px;
+        }
+        .show{
+            display: block !important;
+            transition: all 0.5s;
+        }
+        .icons img:hover{
+            height: 200px;
+            transition: all 0.5s;
+        }
+        .othersMap{
+            background-color: rgba(255,255,255,0.8);
+            position: relative;
+            top: -180;
+            z-index: 1;
+        }
+        .othersMap img{
+            position: absolute;
+            top: -150px;
+        }
+        .othersMap li{
+            float: left;
+            padding: 3px 20px;
+        }
+        .othersMap ul{
+            width: fit-content;
+            height: 100px;
+            list-style: none;
+            padding: 30px;
+        }

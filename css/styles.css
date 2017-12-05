@@ -131,7 +131,7 @@
         }
         .fiveContainer{
             position: relative;
-            top: 90px;
+            top: 110px;
             width: 100%;
             font-family: Althea, sans-serif;
             height: 650px;
@@ -143,6 +143,14 @@
             width: 100%;
             font-family: Althea, sans-serif;
             height: 950px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        .sevenContainer{
+            position: relative;
+            top: 90px;
+            width: 100%;
+            font-family: Althea, sans-serif;
+            height: 580px;
             background-color: rgba(255, 255, 255, 0.7);
         }
         .subContainer{
@@ -175,7 +183,7 @@
             position: relative;
             top: -30px;
             z-index: 2;
-            width: 890px;
+            width: 100%;
             float: right;
         }
         .formContact input{
@@ -188,7 +196,14 @@
             border: 1px solid rgb(95, 76, 78);
             padding: 5px;
         }
-
+        .ProductContainer{
+            position: relative;
+            top: 50px;
+            width: 100%;
+            font-family: Althea, sans-serif;
+            height: 580px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
         .formContact textarea{
             width: 100%;
             font-size: 22px;
@@ -328,3 +343,189 @@
             width: 500px;
             float: left;
         }
+
+        /* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: 0 auto;
+  top: 80px;
+}
+
+.mySlides {
+    display: none;
+    height: 270px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  font-size: 25px;
+  text-shadow: -1px 1px 2px black;
+}
+.prev{
+    font-size: 25px;
+    text-shadow: 1px 1px 2px black;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.0s;
+  -moz-animation-name: fade;
+  -moz-animation-duration: 2.0s;
+  animation-name: fade;
+  animation-duration: 2.0s;
+}
+.ProductImg{
+    float: left;
+    margin: 0px 20px;
+}
+.focusProduct{
+    position: absolute;
+    top: 5px;
+    text-align: center;
+    width: 260px;
+    height: 260.078px;
+    vertical-align: middle;
+    font-size: 40px;
+    background-color: rgba(1,1,1,0.3);
+    display: none;
+    font-family: Blacksword;
+}
+.focusProduct p{
+    position: relative;
+    top: 50px;
+}
+.focusProduct button{
+    position: relative;
+    top: 50px;
+    background-color: rgba(255,255,255,0);
+    border: 1px solid black;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.5s;
+    font-family: Althea;
+    font-weight: bold;
+}
+.focusProduct button:hover{
+    padding: 10px;
+    color: white;
+    background-color: rgba(1,1,1,0.8);
+    transition: all 0.5s;
+}
+
+    .modal{
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 9; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    .productExport{
+        float: left;
+        width: 49%;
+        text-align: center;
+        margin: 0;
+        border: 1px solid black;
+    }
+    .productExport h4{
+        margin: 0;
+        border-bottom: 1px solid;
+        padding: 5px;
+    }
+    .productExport ul{
+        list-style: none;
+        padding: 0;
+        line-height: 22px;
+    }
+    .modalContent {
+        background-color: #fefefe;
+        z-index: 6;
+        margin: 0;
+        top: 12%;
+        position: fixed;
+        left: 24%;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 800px;
+        box-shadow: 0px 0px 14px 1px black;
+        border-radius: 10px;
+        font-family: Althea;
+    }
+
+    .modalContent img{
+        position: relative;
+        left: 80px;
+    }
+    .productSpecs{
+        width: 350px;
+        float: right;
+        position: relative;
+        top: 20px;
+        right: 25px;
+    }
+
+    .productSpecs ul{
+        list-style: none;
+        padding: 0px;
+        line-height: 35px;
+        font-size: 20;
+        font-family: Althea;
+    }
+    .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@-moz-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

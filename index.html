@@ -55,7 +55,7 @@
           </div>
       </div>
       <div class="thirdContainer">
-          <div class="subContainer">
+          <div class="subContainer" id="subAbout">
               <div class="Title">
                   <h2>About Us</h2>
                   <div class="line"></div>
@@ -83,7 +83,7 @@
         </div>
       </div>
       <div class="sixContainer">
-          <div class="subContainer">
+          <div class="subContainer" id="subMarket">
               <div class="Title">
                   <h2>Markets</h2>
                   <div class="line"></div>
@@ -253,16 +253,19 @@
               <div class="formContact">
                   <form class="contact" name="contact" method="post">
                       <div class="inputDiv">
-                          <input type="text" name="email" placeholder="Email">
+                          <input id="email" type="text" name="email" placeholder="Email">
                       </div>
                       <div class="inputDiv">
-                          <input type="text" name="name" placeholder="Name">
+                          <input id="name" type="text" name="name" placeholder="Name">
                       </div>
                       <div class="inputDiv">
-                          <input type="text" name="phone" placeholder="Phone Number">
+                          <input id="phone" type="text" name="phone" placeholder="Phone Number">
                       </div>
                       <div class="AreaDiv">
-                          <textarea name="message" rows="8" cols="80" placeholder="Message"></textarea>
+                          <textarea id="message" name="message" rows="8" cols="80" placeholder="Message"></textarea>
+                      </div>
+                      <div class="buttonDiv">
+                          <button type="button" id="sendbtn" name="button">Send</button>
                       </div>
                   </form>
               </div>
@@ -292,6 +295,7 @@
       </footer>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" integrity="sha256-ihAoc6M/JPfrIiIeayPE9xjin4UWjsx2mjW/rtmxLM4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

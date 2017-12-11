@@ -9,6 +9,67 @@ $(document).ready(function(){
         alert($(window).scrollTop() + " px");
     })
 
+    function contactForm(button){
+        $(button).click(function(){
+            jQuery.validator.addMethod("lettersonly", function(value, element) {
+                return this.optional(element) ||/^[a-zA-Z\s]*$/i.test(value);
+            }, "Letters only please");
+            jQuery.validator.addMethod("phoneUS", function(phone_number, element) {
+                phone_number = phone_number.replace(/\s+/g, "");
+                return this.optional(element) || phone_number.length > 9 &&
+                phone_number.match(/^[0-9]*$/);
+            }, "Please specify a valid phone number");
+            $('.contact').validate({
+                rules: {
+                    name:{
+                        required: true,
+                        minlength: 2,
+                        lettersonly: true,
+                    },
+
+                    email:{
+                        required: true,
+                        minlength: 3,
+                        email: true,
+                    },
+                    phone:{
+                        required: true,
+                        minlength: 6,
+                        phoneUS: true,
+                    },
+                    message:{
+                        required: true,
+                        minlength: 8,
+                    }
+                },
+                messages:{
+                    name: "Please introduce a valid Name, minimum 3 letters",
+                    email: "Please introduce a valid Email, minimum 3 letters",
+                    phone: "Please introduce a valid Phone Number, minimun 6 digits",
+                    message: 'Please write at least 8 characters',
+                },
+            })
+            if($('.contact').valid()){
+                name = $('#name').val();
+                email = $('#email').val();
+                phone = $('#phone').val();
+                message = $('#message').val();
+                $.ajax({
+                    url: 'php/mail.php',
+                    type: 'POST',
+                    dataType: "json",
+                    data: {name: name, email: email, phone: phone, message: message},
+                    success: function(data){
+                        $('.formContact').append('<div class="success">Your message was send with success</div>');
+                    },
+                    error: function(){
+                        $('.formContact').append('<div class="error">An error was ocurred please try again later.</div>');
+                    }
+                })
+            }
+        })
+    }
+
     function focusTarget(selection, target){
         $(selection).click(function(){
             $('html,body').animate({
@@ -39,6 +100,12 @@ $(document).ready(function(){
         }else{
             $(this).children('.focusProduct').addClass('show');
         }
+        if($(this).children('img').hasClass('zoom')){
+            $(this).children('img').removeClass('zoom');
+        }else{
+            $(this).children('img').addClass('zoom');
+        }
+
     })
 
     $(window).on('scroll', function(){
@@ -98,7 +165,7 @@ $(document).ready(function(){
     }
 
     function ProductModal(button){
-        $('button').click(function(){
+        $(button).click(function(){
             product = $(this).prev('.textProduct').text();
 
             switch (product) {
@@ -182,6 +249,7 @@ $(document).ready(function(){
     focusTarget('#about', '.thirdContainer');
     redirect('#index', '/');
     ProductModal('.productbtn');
+    contactForm('#sendbtn');
     focusTarget('#market', '.sixContainer');
     focusTarget('#product', '.sevenContainer');
     focusTarget('#contact', '.fiveContainer');

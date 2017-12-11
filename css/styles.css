@@ -10,7 +10,7 @@
             height: 100%;
             padding: 0;
             margin: 0;
-            background: url(../img/welcomeback.png) 50% 0 fixed no-repeat;
+            background: url(../img/welcomeback.jpg) 50% 0 fixed no-repeat;
             background-size: cover;
         }
         .firstContainer{
@@ -109,12 +109,16 @@
             width: 100%;
             font-family: Althea, sans-serif;
             height: 650px;
+
+
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        #subAbout{
             background-image: url(../img/mano.png);
             background-repeat: no-repeat;
             background-position-x: -85px;
             background-position-y: 160px;
-
-            background-color: rgba(255, 255, 255, 0.7);
         }
         .fourthContainer{
             position: relative;
@@ -401,6 +405,22 @@
 .ProductImg{
     float: left;
     margin: 0px 20px;
+    width: 260px;
+    height: 260.078px;
+    overflow: hidden;
+}
+.producImg img{
+    width: 260px;
+    height: auto;
+    transition: all 0.5s;
+}
+
+.zoom{
+    width: 300px;
+    height: auto;
+    transition: all 0.5s;
+    display: block;
+    margin: 0 auto;
 }
 .focusProduct{
     position: absolute;
@@ -410,13 +430,14 @@
     height: 260.078px;
     vertical-align: middle;
     font-size: 40px;
-    background-color: rgba(1,1,1,0.3);
+    background-color: rgba(1,1,1,0.6);
     display: none;
     font-family: Blacksword;
 }
 .focusProduct p{
     position: relative;
     top: 50px;
+    color: white;
 }
 .focusProduct button{
     position: relative;
@@ -430,13 +451,48 @@
     font-family: Althea;
     font-weight: bold;
 }
+#sendbtn{
+    position: relative;
+    background-color: rgba(255,255,255,0);
+    border: 1px solid black;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.5s;
+    font-family: Althea;
+    font-weight: bold;
+    float: right;
+}
+#sendbtn:hover{
+    padding: 10px;
+    color: white;
+    background-color: rgba(1,1,1,0.8);
+    transition: all 0.5s;
+}
 .focusProduct button:hover{
     padding: 10px;
     color: white;
     background-color: rgba(1,1,1,0.8);
     transition: all 0.5s;
 }
-
+.success{
+    width: 100%;
+    position: relative;
+    color: green;
+    background-color: rgba(107, 234, 98, 0.3);
+    top: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.error{
+    width: 100%;
+    position: relative;
+    color: red;
+    background-color: rgba(234, 98, 98, 0.3);
+    top: 20px;
+    text-align: center;
+    padding: 10px;
+}
     .modal{
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
@@ -515,7 +571,224 @@
 
 
 
+@media screen and (max-width: 1366px) {
+    .modalContent{
+        top: 5%;
+        left: 18%;
+    }
+}
 
+@media screen and (max-width: 1000px) {
+    .title h2{
+        font-size: 60px;
+    }
+    #index{
+        padding: 0 20px !important;
+    }
+    #subAbout{
+        background-image: none;
+    }
+    #subAbout p{
+        margin-left: 0px !important;
+    }
+    .menu li {
+        padding: 18.5px 5px !important;
+    }
+    .exportList ul{
+        width: 80px !important;
+    }
+    .modalContent{
+        top: 60px !important;
+        left: auto !important;
+        width: 91% !important;
+    }
+    .modalContent img{
+        position: relative !important;
+        display: block !important;
+        margin: 0 auto !important;
+        height: 150px !important;
+        width: auto !important;
+        left: 0px !important;
+    }
+    .productSpecs{
+        width: auto !important;
+        float:none !important;
+        position: relative !important;
+        top: 0px !important;
+        text-align: center !important;
+        right: 0px !important;
+        font-size: 15px !important;
+    }
+    .sevenContainer{
+        height: fit-content;
+        padding-bottom: 40px;
+    }
+    .slideshow-container{
+        top: 0px;
+    }
+    .ProductImg{
+        float: none;
+        margin: 20px auto;
+    }
+    .mySlides{
+        height: fit-content;
+    }
+    .focusProduct{
+        margin-top: -260px;
+        top: auto;
+    }
+    .thirdContainer{
+        height: fit-content;
+    }
+    .fourthContainer{
+        background-position-x: 0px;
+    }
+    .subContainer{
+        width: 90%;
+        padding: 0px 5%;
+    }
+    .menu li{
+        padding: 18.5px 20px;
+    }
+    .modalContent{
+        top: 5%;
+        left: 18%;
+    }
+    .sixContainer{
+        height: 680px;
+    }
+    .sevenContainer{
+        height: fit-content;
+        padding-bottom: 40px;
+    }
+    .slideshow-container{
+        top: 0px;
+    }
+    .ProductImg{
+        float: none;
+        margin: 20px auto;
+    }
+    .mySlides{
+        height: fit-content;
+    }
+    #subAbout{
+        background-size: 600px;
+        background-position-y: 190px;
+    }
+    #text1{
+        margin-left: 200px;
+    }
+    #text2{
+        margin-left: 340px;
+    }
+    #text3{
+        margin-left: 350px;
+    }
+    #text4{
+        margin-left: 0px;
+    }
+    #text5{
+        margin-left: 0px;
+    }
+    #subMarket{
+        width: 400px;
+    }
+    #usa{
+        top:100px;
+        margin-left: 40px;
+    }
+    #usa:hover{
+        top: 70px;
+        margin-left: 20px;
+    }
+    #spain{
+        top:118px;
+        margin-left: 114px;
+    }
+    #spain:hover{
+        top:84px;
+        margin-left: 83px;
+    }
+    #france{
+        top: 105px;
+        margin-left: 155px;
+    }
+    #france:hover{
+        top: 70px;
+        margin-left: 139px;
+    }
+    #china{
+        top: 120px;
+        margin-left: 240px;
+    }
+    #china:hover{
+        top: 90px;
+        margin-left: 220px;
+    }
+    .icons{
+        height: 80px;
+    }
+    .icons img:hover{
+        height: 120px;
+    }
+    .icons:hover{
+        height: 120px;
+    }
+    .country:hover{
+        height: 120px;
+    }
+    .country{
+        height: 80px;
+    }
+    .exportList{
+        font-size: 16px;
+        top: -100px;
+        left: 95px;
+    }
+    .exportList li{
+        margin: 3px 13px;
+    }
+    .othersMap{
+        top: -60px;
+    }
+    .othersMap li{
+        font-size: 16px;
+        padding: 3px 12px;
+    }
+    .othersMap ul{
+        height: 210px;
+    }
+    .othersMap img{
+        height: 120px;
+        top: -90px;
+    }
+    .formContact{
+        width: 100%;
+        float: none;
+    }
+    .fiveContainer{
+        height: fit-content;
+    }
+    .contactInfo{
+        float: none;
+        width: auto;
+        left: 0px;
+        top: 0px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .exportList ul{
+        width: 200px;
+    }
+    .modalContent{
+        top: 5%;
+        left: 10%;
+    }
+}
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}

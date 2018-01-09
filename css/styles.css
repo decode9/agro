@@ -248,6 +248,7 @@
             transition: all 0.5s;
             z-index: 2;
         }
+
         #spain{
             top: 290px;
             margin-left: 340px;
@@ -345,6 +346,7 @@
         }
         .formContact{
             width: 500px;
+            height: 400px;
             float: left;
         }
 
@@ -496,7 +498,7 @@
     .modal{
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
-        z-index: 9; /* Sit on top */
+        z-index: 10000000; /* Sit on top */
         left: 0;
         top: 0;
         width: 100%; /* Full width */
@@ -572,8 +574,14 @@
 
 
 @media screen and (max-width: 1366px) {
+    #modalop{
+        height: -webkit-fill-available;
+        height: -moz-fill-available;
+        overflow-y: scroll;
+
+    }
     .modalContent{
-        top: 5%;
+        top: 1%;
         left: 18%;
     }
 }
@@ -592,7 +600,7 @@
         margin-left: 0px !important;
     }
     .menu li {
-        padding: 18.5px 5px !important;
+        padding: 18.5px 5px ;
     }
     .exportList ul{
         width: 80px !important;
@@ -646,9 +654,6 @@
     .subContainer{
         width: 90%;
         padding: 0px 5%;
-    }
-    .menu li{
-        padding: 18.5px 20px;
     }
     .modalContent{
         top: 5%;
@@ -779,6 +784,60 @@
     }
 }
 
+@media screen and (max-width: 600px){
+    .WelcomeFlag{
+        width: 300px;
+    }
+    .Map{
+        margin-top: 50px;
+    }
+    .WelcomeFlag img{
+        width: 300px !important;
+    }
+    .menu li {
+        font-size: 12px;
+        padding: 18.5px 3px !important;
+    }
+    .subContainer ul{
+        width: 85%;
+        margin: 0 auto;
+        font-size: 16px
+    }
+    .fourthContainer{
+        height: 700px;
+    }
+    #subAbout{
+        font-size: 16px;
+    }
+    .exportList{
+        top: -5px;
+        left: 0px;
+        width: 150px;
+    }
+    #subMarket{
+        width: 300px !important;
+        padding: 0px;
+    }
+    #usa{
+        top:70px !important;
+        margin-left: 20px !important;
+    }
+    #spain{
+        top: 78px !important;
+        margin-left: 70px !important;
+    }
+    #france{
+        top:67px !important;
+        margin-left: 108px !important;
+    }
+    #china{
+        top:76px !important;
+        margin-left: 172px !important;
+    }
+    .othersMap ul{
+        height: 290px !important;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .exportList ul{
@@ -789,6 +848,7 @@
         left: 10%;
     }
 }
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
